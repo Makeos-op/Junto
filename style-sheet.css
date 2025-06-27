@@ -1,3 +1,55 @@
-.barra-superior{
-    
+.barra-superior {
+    position: fixed; /* Mantiene el menú fijo en la parte superior */
+    background-color: rgb(172, 229, 160); /* Fondo blanco para visibilidad */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    z-index: 100; /* Se asegura de estar por encima de otros elementos */
+    height: 5rem; /* Altura fija del menú (80px aprox.) */
+    display: flex; /* Activa Flexbox para alinear los elementos internos */
+    align-items: center; /* Centrado vertical */
+    justify-content: space-between; /* Separación entre logo y menú */
+    padding: 0 1.5rem; 
+}
+.tabla-referencia{
+list-style: none; /* Quita los bullets */
+display: flex; /* Muestra en fila horizontal */
+justify-content: space-around; /* Espaciado uniforme entre elementos */
+justify-content: flex-start;
+margin: 1rem;
+padding: 2rem;
+}
+
+.referencias-principales {
+    list-style: none;
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:poppings,nunito,open-sans,sans-serif;
+}
+button {
+    padding: auto;
+    border-radius:20%;
+    height: 2rem;
+}
+.boton-principal{
+    background-color: white;
+    border-color: white;
+}
+.boton-secundario{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.sobre-nosotros-dudas{
+    background-color:#A8C6FA;
+}
+.datos-adicionales{
+    background-color: #6e95d8;
+    color: white;
+}
+.links-inferiores{
+    color: white;
+    text-decoration: none;
+}
+.texto-importante{
+    font-size:200rem;
 }
