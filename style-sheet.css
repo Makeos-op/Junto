@@ -1,55 +1,204 @@
-.barra-superior {
-    position: fixed; /* Mantiene el menú fijo en la parte superior */
-    background-color: rgb(172, 229, 160); /* Fondo blanco para visibilidad */
-    width: 100%; /* Ocupa todo el ancho de la pantalla */
-    z-index: 100; /* Se asegura de estar por encima de otros elementos */
-    height: 5rem; /* Altura fija del menú (80px aprox.) */
-    display: flex; /* Activa Flexbox para alinear los elementos internos */
-    align-items: center; /* Centrado vertical */
-    justify-content: space-between; /* Separación entre logo y menú */
-    padding: 0 1.5rem; 
-}
-.tabla-referencia{
-list-style: none; /* Quita los bullets */
-display: flex; /* Muestra en fila horizontal */
-justify-content: space-around; /* Espaciado uniforme entre elementos */
-justify-content: flex-start;
-margin: 1rem;
-padding: 2rem;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        background-color: #A8C6FA;
+    }
 
-.referencias-principales {
-    list-style: none;
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-    font-family:poppings,nunito,open-sans,sans-serif;
-}
-button {
-    padding: auto;
-    border-radius:20%;
-    height: 2rem;
-}
-.boton-principal{
-    background-color: white;
-    border-color: white;
-}
-.boton-secundario{
-    background-color: black;
-    color: white;
-    border-color: black;
-}
-.sobre-nosotros-dudas{
-    background-color:#A8C6FA;
-}
-.datos-adicionales{
-    background-color: #6e95d8;
-    color: white;
-}
-.links-inferiores{
-    color: white;
-    text-decoration: none;
-}
-.texto-importante{
-    font-size:200rem;
-}
+    .header-landing {
+        background-color: #A9E5BB;
+        padding: 15px 50px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #4a6baf;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .botones {
+        display: flex;
+        gap: 15px;
+    }
+
+    .botonsignin, .botonlogin {
+        padding: 8px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+    }
+
+    .botonsignin {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    .botonlogin {
+        background-color: black;
+        color: white;
+    }
+
+    .Busqueda-presentacion {
+        padding: 60px 50px;
+        text-align: center;
+        background-color:#A8C6FA;
+    }
+
+    .Contenedor-tituloprincipal h1 {
+        font-size: 48px;
+        color: black;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    .buscador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .contenidobuscador {
+        text-align: left;
+        flex: 1;
+    }
+
+    .textobuscador {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 15px;
+        font-weight: normal;
+    }
+
+    .Buscador {
+        min-width: 60%;
+        width: auto;
+        max-width: 80%;
+        padding: 15px 20px;
+        border: 2px solid black;
+        border-radius: 30px;
+        font-size: 16px;
+        background-color: #4a6baf;
+        color: white;
+    }
+    .Buscador::placeholder{
+        color: white;
+    }
+
+    .imagenjuanty {
+        width: auto;
+        height: 10rem;
+    }
+
+    .sobrenosotros {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color:#A8C6FA;
+    }
+
+    .sobrenosotros-contenido {
+        flex: 1;
+        padding-right: 50px;
+    }
+
+    .sobrenosotros-contenido h2 {
+        font-size: 28px;
+        color: black;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .sobrenosotros-contenido p {
+        font-size: 16px;
+        color: black;
+        line-height: 1.6;
+    }
+
+    .imagen-con-texto {
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .Datos-extra {
+        background-color:#4b6a9e;
+        color: white;
+        padding: 40px 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenido-extra {
+        flex: 1;
+        padding: 0 20px;
+    }
+
+    .contenido-extra h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .contenido-extra-lista {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contenido-extra-lista-elemento {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .contenido-extra-lista a {
+        color: #ecf0f1;
+        text-decoration: none;
+    }
+
+
+    .Contenedor-tituloprincipal h1 {
+        letter-spacing: 1px;
+    }
+
+    .textobuscador {
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .sobrenosotros-contenido p {
+        text-align: justify;
+    }
